@@ -1,25 +1,37 @@
-//import styled from 'styled-components'
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import Dropdown from 'react-bootstrap/Dropdown';
+import Badge from 'react-bootstrap/Badge'
+import { FaOpencart } from 'react-icons/fa'
 
-//import ToggleButton from "./Toggle"
-import CartWidget from "./CartWidget"
 
 function CrossNav() {
   return (
     <>
-    <nav className="App">
-    <h2>Cross <span>Commerce</span></h2>
-    <div>
-     <a href='#'>Home</a>
-     <a href='#'>Clothing</a>
-     <a href='#'>Racks</a>
-     <a href='#'>Kettelbell Set</a>
-     <a href='#'>Dumbell Set</a>
-     <a href='#'>Contact Us</a>
-     </div>
-     <CartWidget />
-    </nav>
+      <Navbar expand="lg">
+        <Container fluid>
+          <Navbar.Brand href="/home" className='h2'>Cross <span className='commerce'>Commerce</span> </Navbar.Brand>
+          <Nav className='me-center'>
+            <Nav.Link className='link' href="/Clothing">Clothing</Nav.Link>
+            <Nav.Link className='link' href="/Ketelbel">Ketellbell</Nav.Link>
+            <Nav.Link className='link' href="/Dumbbel">Dumbbel</Nav.Link>
+            <Nav.Link className='link' href="/Racks">Racks</Nav.Link>
+            <Nav.Link className='link' href="/Cart">Cart</Nav.Link>
+          </Nav>
+          <Dropdown>
+            <Dropdown.Toggle className='togg' variant='color: black'>
+              <FaOpencart className='cart'></FaOpencart>
+              <Badge className='badge'>{10} </Badge>
+            </Dropdown.Toggle>
+            <Dropdown.Menu style={{ minWidht: 370 }}>
+              <span className='drop' style={{ padding: 5 }}>Cart is Empty!</span>
+            </Dropdown.Menu>
+          </Dropdown>
+        </Container>
+      </Navbar>
     </>
-  )
+  );
 }
 
 export default CrossNav

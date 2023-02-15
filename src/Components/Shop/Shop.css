@@ -1,0 +1,59 @@
+.products {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+  }
+  
+  .product {
+    border-radius: 15px;
+    border-color: white;
+    width: 300px;
+    height: 350px;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .product img {
+    width: fit-content;
+    height: 200px ;
+  }
+  
+  .product .description {
+    text-align: center;
+  }
+  
+  .product:hover {
+    transition: 0.3s ease-in;
+    cursor: pointer;
+  }
+
+  .name {
+    color: yellow;
+    font-family: "Outline";
+    font-size: 25px;
+  }
+
+  .detail {
+    font-family: "Poppins";
+    color: white;
+  }
+
+  .price {
+    font-family: "Poppins";
+    color: white;
+  }
+
+.btn {
+    font-family: "Poppins";
+}
+
+.stock {
+    font-size: 10px;
+    color: white;
+    font-family: "Poppins";
+}
