@@ -1,5 +1,5 @@
 import React from "react"
-import { RACKPRODUCT } from "../Shop/products"
+import { productosVarios } from "../Shop/products2"
 import { Product } from "./product"
 
 
@@ -8,7 +8,7 @@ const Racks = () => {
     <div className="Shop">
     <h2 className='TitleShop'>Racks</h2>
     <div className="products"> {""}
-         { RACKPRODUCT.map ((product) => <Product data= {product} />) }
+         { productosVarios.map ((product, racks) => <Product key={racks} data= {product} />) }
           </div>
     </div>
   )

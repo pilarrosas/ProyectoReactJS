@@ -23,10 +23,10 @@ import rak2 from '../assets/Racks/RA2.webp'
 import rak3 from '../assets/Racks/RA3.webp'
 import rak4 from '../assets/Racks/RA4.webp'
 
-
-export const CLOTHINGPRODUCTS = [
+export const productosVarios = [
     {
         id: 1,
+        categoria: 'Clothing',
         name: 'T-Shirt',
         price: 35,
         detail: 'High Quality Reebok Female T-Shirt',
@@ -35,6 +35,7 @@ export const CLOTHINGPRODUCTS = [
     },
     {
         id: 2,
+        categoria: 'Clothing',
         name: 'T-Shirt',
         price: 30,
         detail: 'High Quality Rouge Male T-Shirt',
@@ -43,6 +44,7 @@ export const CLOTHINGPRODUCTS = [
     },
     {
         id: 3,
+        categoria: 'Clothing',
         name: 'T-Shirt',
         price: 33,
         detail: 'High Quality Rouge Male T-Shirt',
@@ -51,6 +53,7 @@ export const CLOTHINGPRODUCTS = [
     },
     {
         id: 4,
+        categoria: 'Clothing',
         name: 'T-Shirt',
         price: 40,
         detail: 'High Quality Reebok Kids T-Shirt',
@@ -59,6 +62,7 @@ export const CLOTHINGPRODUCTS = [
     },
     {
         id: 5,
+        categoria: 'Clothing',
         name: 'T-Shirt',
         price: 39,
         detail: 'High Quality Reebok Unisex T-Shirt',
@@ -67,6 +71,7 @@ export const CLOTHINGPRODUCTS = [
     },
     {
         id: 6,
+        categoria: 'Clothing',
         name: 'T-Shirt',
         price: 32,
         detail: 'High Quality Reebok Male T-Shirt',
@@ -75,6 +80,7 @@ export const CLOTHINGPRODUCTS = [
     },
     {
         id: 7,
+        categoria: 'Clothing',
         name: 'T-Shirt',
         price: 37,
         detail: 'High Quality WIT Kids T-Shirt',
@@ -83,6 +89,7 @@ export const CLOTHINGPRODUCTS = [
     },
     {
         id: 8,
+        categoria: 'Clothing',
         name: 'T-Shirt',
         price: 38,
         detail: 'High Quality Reebok Female T-Shirt',
@@ -91,17 +98,16 @@ export const CLOTHINGPRODUCTS = [
     },
     {
         id: 9,
+        categoria: 'Clothing',
         name: 'T-Shirt',
         price: 20,
         detail: 'High Quality Rouge Male T-Shirt',
         prodImg: remera9,
         stock: 10,
     },
-]
-
-export const DUMBBELPRODUCTS = [
     {
         id: 10,
+        categoria: 'Dumbbel',
         name: 'Dumbbel',
         price: 50,
         detail: 'High Quality Iron 10LB Dumbbel',
@@ -110,6 +116,7 @@ export const DUMBBELPRODUCTS = [
     },
     {
         id: 11,
+        categoria: 'Dumbbel',
         name: 'Dumbbel',
         price: 40,
         detail: 'High Quality Dumbbel Set',
@@ -118,6 +125,7 @@ export const DUMBBELPRODUCTS = [
     },
     {
         id: 12,
+        categoria: 'Dumbbel',
         name: 'Dumbbel',
         price: 33,
         detail: 'High Quality Iron 30LB Dumbbel',
@@ -126,6 +134,7 @@ export const DUMBBELPRODUCTS = [
     },
     {
         id: 13,
+        categoria: 'Dumbbel',
         name: 'Dumbbel Rack',
         price: 45,
         detail: 'High Quality Iron Dumbbel Rack',
@@ -134,17 +143,16 @@ export const DUMBBELPRODUCTS = [
     },
     {
         id: 14,
+        categoria: 'Dumbbel',
         name: 'Dumbbel Rack',
         price: 39,
         detail: 'High Quality Iron Dumbbel Rack',
         prodImg: dum5,
         stock: 10,
     },
-]
-
-export const KETTPRODUCTS = [
     {
         id: 15,
+        categoria: 'Ketelbel',
         name: 'Kettelbell',
         price: 50,
         detail: 'High Quality Iron Kettelbell Set',
@@ -153,6 +161,7 @@ export const KETTPRODUCTS = [
     },
     {
         id: 16,
+        categoria: 'Ketelbel',
         name: 'Kettelbell',
         price: 40,
         detail: 'High Quality Iron Kettelbell Set',
@@ -161,6 +170,7 @@ export const KETTPRODUCTS = [
     },
     {
         id: 17,
+        categoria: 'Ketelbel',
         name: 'Kettelbell',
         price: 33,
         detail: 'High Quality Iron Kettelbell Set',
@@ -169,6 +179,7 @@ export const KETTPRODUCTS = [
     },
     {
         id: 18,
+        categoria: 'Ketelbel',
         name: 'Kettelbell',
         price: 45,
         detail: 'High Quality Iron Kettelbell',
@@ -177,6 +188,7 @@ export const KETTPRODUCTS = [
     },
     {
         id: 19,
+        categoria: 'Ketelbel',
         name: 'Kettelbell',
         price: 39,
         detail: 'High Quality Iron Kettelbell',
@@ -185,17 +197,16 @@ export const KETTPRODUCTS = [
     },
     {
         id: 20,
+        categoria: 'Ketelbel',
         name: 'Kettelbell',
         price: 39,
         detail: 'High Quality Iron Kettelbell',
         prodImg: ket6,
         stock: 10,
     },
-]
-
-export const RACKPRODUCT = [
     {
         id: 21,
+        categoria: 'Racks',
         name: 'Rack',
         price: 300,
         detail: 'High Quality Blue Iron Rack',
@@ -204,6 +215,7 @@ export const RACKPRODUCT = [
     },
     {
         id: 22,
+        categoria: 'Racks',
         name: 'Rack',
         price: 350,
         detail: 'High Quality Black Iron Rack',
@@ -212,6 +224,7 @@ export const RACKPRODUCT = [
     },
     {
         id: 23,
+        categoria: 'Racks',
         name: 'Rack',
         price: 400,
         detail: 'High Quality Red Iron Rack',
@@ -220,6 +233,7 @@ export const RACKPRODUCT = [
     },
     {
         id: 24,
+        categoria: 'Racks',
         name: 'Rack',
         price: 450,
         detail: 'High Quality Yellow Iron Rack',

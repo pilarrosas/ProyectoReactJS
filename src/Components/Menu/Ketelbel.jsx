@@ -1,5 +1,5 @@
 import React from 'react'
-import { KETTPRODUCTS } from '../Shop/products'
+import { productosVarios } from '../Shop/products2'
 import { Product } from "./product"
 
 const Ketelbel = () => {
@@ -7,7 +7,7 @@ const Ketelbel = () => {
     <div className='Shop'>
         <h2 className='TitleShop'>Ketellbell</h2>
         <div className="products"> {""}
-         { KETTPRODUCTS.map ((product) => <Product data= {product} />) }
+         { productosVarios.map ((product, kettelbel) => <Product key={kettelbel} data= {product} />) }
           </div>
     </div>
   )

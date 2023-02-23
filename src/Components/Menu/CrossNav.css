@@ -118,8 +118,8 @@ svg {
 
 .btn.btn-primary {
     font-family: "Poppins";
-    color: yellow;
-    background-color: black;
+    color: rgb(255, 255, 255);
+    background-color: black !important;
     border: 0;
 }
 
@@ -148,4 +148,9 @@ svg {
 
 .TitleShop:hover {
     color: yellow;
+}
+
+.btn3 {
+    color: rgb(255, 255, 255) !important;
+    margin-left: 5px;
 }
