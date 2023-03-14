@@ -1,113 +1,69 @@
-@font-face {
-    font-family: 'Outline';
-    src: url('/MyApp/src/Components/Fuentes/Outline.ttf') format('truetype');
-}
-
-* {
+*{
     background-color: black;
 }
 
-
-
-.h2 {
-    font-size: 40px;
-    font-family: "Outline";
+.Commerce {
     color: yellow !important;
 }
 
-.commerce {
-    color: white;
-}
-
-.link {
+.about {
     color: white !important;
-    font-family: "Poppins" !important;
-    font-size: 15px;
+    margin: 10px;
+}
+.about:hover {
+    color: yellow !important;
+}
+.contact {
+    margin: 10px;
+    color: white !important;
+}
+.contact:hover {
+    color: yellow !important;
 }
 
-.margenes {
-    margin: 0 !important;
-    padding: 0 !important;
+.signin {
+    color: white !important;
+    margin: 10px;
 }
 
-nav div {
-    margin-right: 8rem;
+.signup {
+    color: white !important;
+    margin: 10px;
 }
 
-nav div a {
-    color: white;
+.shopcart {
+    color: white !important;
+    margin: 10px;
+}
+
+.shopcart:hover {
+    color: yellow !important;
+}
+.signin:hover {
+    color: yellow !important;
+}
+.signup:hover {
+    color: yellow !important;
+}
+
+.Contenedor {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    margin: 5px;
+}
+
+.allprod {
     font-family: "Poppins";
-    text-decoration: none;
-    margin-right: 1rem;
-}
-
-.togg {
-    background-color: black;
-    border: 0 !important;
-}
-
-.togg:hover {
-    background-color: black !important;
-    border: 0 !important;
-}
-
-.badge {
-    color: white !important;
-    background-color: black !important;
-font-family: "Poppins" !important;
-}
-
-.drop {
-    color: rgb(0, 0, 0) !important;
-    background-color: rgb(255, 255, 255) !important;
-    font-family: "Poppins" !important;
-}
-
-.cart {
     font-size: 30px;
-    color: white !important;
-    background-color: black !important;
-}
-
-svg {
-    margin-right: 2rem;
-}
-
-.link:hover {
-    color: yellow !important;
-}
-
-.Titulo {
-    font-family: "Poppins";
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.SubTitulo {
-    font-family: "Outline";
-    font-size: 50px;
-    background-color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.contfo {
-    color: white;
-    font-family: "Outline";
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.us {
-    color: yellow;
-    font-family: "Outline";
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .card {
@@ -116,12 +72,7 @@ svg {
     height: 25%;
 }
 
-.btn.btn-primary {
-    font-family: "Poppins";
-    color: rgb(255, 255, 255);
-    background-color: black !important;
-    border: 0;
-}
+
 
 .card-title {
     font-family: "Poppins";
@@ -153,4 +104,9 @@ svg {
 .btn3 {
     color: rgb(255, 255, 255) !important;
     margin-left: 5px;
+}
+
+.card-img {
+    width: max-content;
+    height: 600px;
 }

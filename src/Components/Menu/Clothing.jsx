@@ -3,12 +3,12 @@ import { productosVarios } from '../Shop/products2'
 import { Product } from './product'
 import { ShopContext } from "../Context/shop-context"
 
-const Clothing = () => {
+const Clothing = ( {} ) => {
   return (
     <>
       <div className="Shop">
     <div>
-    <h2 className='TitleShop'>Clothing</h2>
+    <h2 className='TitleShop'></h2>
     </div>
     <div className="products"> {""}
          { productosVarios.map ((product, clothing) => <Product key={clothing} data= {product} />) }

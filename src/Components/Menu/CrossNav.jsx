@@ -1,40 +1,38 @@
 import React from 'react'
 import Container from 'react-bootstrap/Container';
+import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import Dropdown from 'react-bootstrap/Dropdown';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+import Offcanvas from 'react-bootstrap/Offcanvas';
+import Button from 'react-bootstrap/Button';
 
-import { FaOpencart } from 'react-icons/fa'
-
-function CrossNav(props) {
-
+const CrossNav = () => {
   return (
     <>
-
-      <Navbar expand="lg">
-        <Container fluid>
-          <Navbar.Brand href="/" className='h2'>Cross <span className='commerce'>Commerce</span> </Navbar.Brand>
-          <Nav className='me-center'>
-            <Nav.Link className='link' href="/Clothing">Clothing</Nav.Link>
-            <Nav.Link className='link' href="/Ketelbel">Ketellbell</Nav.Link>
-            <Nav.Link className='link' href="/Dumbbel">Dumbbel</Nav.Link>
-            <Nav.Link className='link' href="/Racks">Racks</Nav.Link>
-            <Nav.Link className='link' href="/Cart">Cart</Nav.Link>
-            <Nav.Link className='link' href="/ContactUs">Contact Us</Nav.Link>
+      <Navbar collapseOnSelect expand="lg"  variant="dark" sticky='top'>
+      <Container fluid>
+        <Navbar.Brand href="/home">Cross <label className='Commerce' href="/home">Commerce</label> </Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="me-auto">
+            <Nav.Link className='about' href="/About">About</Nav.Link>
+            <Nav.Link className='contact' href="/Contact">Contact</Nav.Link>
           </Nav>
-          <Dropdown>
-            <Dropdown.Toggle className='togg' variant='color: black'>
-              <FaOpencart className='cart'></FaOpencart>
-
-            </Dropdown.Toggle>
-            <Dropdown.Menu style={{ minWidht: 370 }}>
-              <span className='drop' style={{ padding: 5 }}>Cart is Empty!</span>
-            </Dropdown.Menu>
-          </Dropdown>
-        </Container>
-      </Navbar>
+          <Nav>
+            <Nav.Link className='signin' href="/Signin">Sign In</Nav.Link>
+            <Nav.Link className='signup' href="/Signup">
+             Sign Up
+            </Nav.Link>
+            <Nav.Link className='shopcart' href="/Cart">
+             Shopping Cart
+            </Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
     </>
-  );
+  )
 }
 
 export default CrossNav

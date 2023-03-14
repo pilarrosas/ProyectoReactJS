@@ -11,27 +11,30 @@ import Ketelbel from './Components/Menu/Ketelbel'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import ContactForm from './Components/Menu/ContactUs'
 import { ShopContextProvider } from './Components/Context/shop-context'
+import { productosVarios } from './Components/Shop/products2'
+
 
 
 
 
 
 function App() {
-  
-
-  return (
+  const allCateogries = [...new Set(productosVarios.map(cat => cat.categoria))]
+   console.log(allCateogries)
+ 
+return (
     <>
     <ShopContextProvider>
       <BrowserRouter>
        <CrossNav />
         <Routes>
-        <Route path='/' element = { <Home />} />
-        <Route path='/Clothing' element ={<Clothing />} />
+        <Route path='/home' element = { <Home />} />
+        {/* <Route path='/Clothing' element ={<Clothing />} />
         <Route path='/Ketelbel' element = { <Ketelbel /> } />
         <Route path='/Dumbbel' element ={<Dumbbel/>} />
         <Route path='/Racks' element ={<Racks />} />
         <Route path='/Cart' element ={<Cart />} />
-        <Route path='/ContactUs' element ={<ContactForm />} />
+        <Route path='/ContactUs' element ={<ContactForm />} /> */}
         </Routes>
       </BrowserRouter>
       </ShopContextProvider>
